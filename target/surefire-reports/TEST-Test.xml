@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Test" time="18.931" tests="4" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="15"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/anon/IdeaProjects/TZ_Art_bank/target/test-classes:/home/anon/IdeaProjects/TZ_Art_bank/target/classes:/home/anon/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar:/home/anon/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/home/anon/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/anon/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/anon/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/home/anon/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:/home/anon/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/home/anon/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:/home/anon/.m2/repository/com/codeborne/selenide/5.15.1/selenide-5.15.1.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/home/anon/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/anon/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/anon/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/anon/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/anon/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/anon/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/anon/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/anon/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/home/anon/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/home/anon/.m2/repository/io/github/bonigarcia/webdrivermanager/4.2.2/webdrivermanager-4.2.2.jar:/home/anon/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/home/anon/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/home/anon/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/home/anon/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/home/anon/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/home/anon/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar:/home/anon/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar:/home/anon/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/home/anon/.m2/repository/com/opencsv/opencsv/5.3/opencsv-5.3.jar:/home/anon/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/home/anon/.m2/repository/org/apache/commons/commons-text/1.9/commons-text-1.9.jar:/home/anon/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/home/anon/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/anon/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/anon/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/anon/.m2/repository/org/assertj/assertj-core/3.18.0/assertj-core-3.18.0.jar:/home/anon/.m2/repository/org/slf4j/slf4j-api/2.0.0-alpha1/slf4j-api-2.0.0-alpha1.jar:/home/anon/.m2/repository/org/slf4j/slf4j-log4j12/2.0.0-alpha1/slf4j-log4j12-2.0.0-alpha1.jar:/home/anon/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/home/anon/.jdks/openjdk-15/lib"/>
+    <property name="sun.java.command" value="/home/anon/IdeaProjects/TZ_Art_bank/target/surefire/surefirebooter17871928417923357823.jar /home/anon/IdeaProjects/TZ_Art_bank/target/surefire 2020-10-30T15-20-40_141-jvmRun1 surefire5319520111334153175tmp surefire_013488964067371145827tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/anon/IdeaProjects/TZ_Art_bank/target/test-classes:/home/anon/IdeaProjects/TZ_Art_bank/target/classes:/home/anon/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar:/home/anon/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/home/anon/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/anon/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/anon/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/home/anon/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:/home/anon/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/home/anon/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:/home/anon/.m2/repository/com/codeborne/selenide/5.15.1/selenide-5.15.1.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/home/anon/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/home/anon/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/anon/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/anon/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/anon/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/anon/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/anon/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/anon/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/anon/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/home/anon/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/home/anon/.m2/repository/io/github/bonigarcia/webdrivermanager/4.2.2/webdrivermanager-4.2.2.jar:/home/anon/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/home/anon/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/home/anon/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/home/anon/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/home/anon/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/home/anon/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar:/home/anon/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar:/home/anon/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/home/anon/.m2/repository/com/opencsv/opencsv/5.3/opencsv-5.3.jar:/home/anon/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/home/anon/.m2/repository/org/apache/commons/commons-text/1.9/commons-text-1.9.jar:/home/anon/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/home/anon/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/anon/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/anon/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/anon/.m2/repository/org/assertj/assertj-core/3.18.0/assertj-core-3.18.0.jar:/home/anon/.m2/repository/org/slf4j/slf4j-api/2.0.0-alpha1/slf4j-api-2.0.0-alpha1.jar:/home/anon/.m2/repository/org/slf4j/slf4j-log4j12/2.0.0-alpha1/slf4j-log4j12-2.0.0-alpha1.jar:/home/anon/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/anon"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-09-15"/>
+    <property name="java.home" value="/home/anon/.jdks/openjdk-15"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/anon/IdeaProjects/TZ_Art_bank"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/home/anon/IdeaProjects/TZ_Art_bank/target/surefire/surefirebooter17871928417923357823.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="15+36-1562"/>
+    <property name="user.name" value="anon"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.4.0-52-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/anon/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="idea.version" value="2020.2.3"/>
+    <property name="java.version" value="15"/>
+    <property name="user.dir" value="/home/anon/IdeaProjects/TZ_Art_bank"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="15+36-1562"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="59.0"/>
+  </properties>
+  <testcase name="errorMessageAppears{String, String, String, String}[1]" classname="Test" time="2.879">
+    <failure message="&#10;Expecting actual not to be null" type="java.lang.AssertionError">java.lang.AssertionError: 
+
+Expecting actual not to be null
+	at Test.errorMessageAppears(Test.java:24)
+</failure>
+    <system-err><![CDATA[log4j:WARN No appenders could be found for logger (com.codeborne.selenide.impl.CiReportUrl).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 9063
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 30, 2020 3:20:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="errorMessageAppears{String, String, String, String}[2]" classname="Test" time="5.413"/>
+  <testcase name="errorMessageAppears{String, String, String, String}[3]" classname="Test" time="5.41"/>
+  <testcase name="errorMessageAppears{String, String, String, String}[4]" classname="Test" time="5.169"/>
+</testsuite>

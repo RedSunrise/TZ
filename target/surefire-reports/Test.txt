@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: Test
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 18.931 s <<< FAILURE! - in Test
+errorMessageAppears{String, String, String, String}[1]  Time elapsed: 2.879 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual not to be null
+	at Test.errorMessageAppears(Test.java:24)
+

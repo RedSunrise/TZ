@@ -1,0 +1,276 @@
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>Account registration — Habr Account</title>
+    
+    <link href="/css/1602839265/main.css" rel="stylesheet" media="all">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#77a2b6">
+<meta name="application-name" content="account.habr">
+<meta name="msapplication-TileColor" content="#77a2b6">
+<meta name="theme-color" content="#77a2b6">
+
+    <meta name="robots" content="noindex">
+  </head>
+
+  <body>
+    <div class="layout">
+      <div class="layout__notice" id="global_notices"></div>
+        <div class="layout__page layout__page_thin">
+    <div class="shadow-box">
+      <div class="shadow-box__title">Registration</div>
+
+      <form action="/ajax/register/" class="form form_register s-form validateble" id="register_form" method="post" data-remote="true" novalidate="">
+        <input type="hidden" name="state" value="">
+<input type="hidden" name="consumer" value="default">
+
+
+        
+        
+        <fieldset class="form__fields">
+
+
+          <div class="form__field js_socials-buttons ">
+            <label class="form__field-label">Or sign up with</label>
+            <div class="socials-buttons s-buttons ">
+  <a href="https://account.habr.com/ajax/social/login/facebook/?consumer=default" data-remote="true" data-method="post" data-post-consumer="default" data-post-state="" class="socials-buttons__button socials-buttons__button_facebook" title="Log in with Facebook">
+    <svg width="36" height="36">
+      <use xlink:href="/img/icons-sprite.svg#facebook"></use>
+    </svg>
+  </a>
+
+  <a href="https://account.habr.com/ajax/social/login/vkontakte/?consumer=default" data-remote="true" data-method="post" data-post-consumer="default" data-post-state="" class="socials-buttons__button socials-buttons__button_vkontakte" title="Log in with VK">
+    <svg width="36" height="36">
+      <use xlink:href="/img/icons-sprite.svg#vk"></use>
+    </svg>
+  </a>
+
+  <a href="https://account.habr.com/ajax/social/login/twitter/?consumer=default" data-remote="true" data-method="post" data-post-consumer="default" data-post-state="" class="socials-buttons__button socials-buttons__button_twitter" title="Log in with Twitter">
+    <svg width="36" height="36">
+      <use xlink:href="/img/icons-sprite.svg#twitter"></use>
+    </svg>
+  </a>
+
+  <a href="https://account.habr.com/ajax/social/login/github/?consumer=default" data-remote="true" data-date="{ code: &quot;code&quot;, userid: &quot;userid&quot; }" data-method="post" data-post-consumer="default" data-post-state="" class="socials-buttons__button socials-buttons__button_github" title="Log in with Github">
+    <svg width="36" height="36">
+      <use xlink:href="/img/icons-sprite.svg#github"></use>
+    </svg>
+  </a>
+
+  <a href="https://account.habr.com/ajax/social/login/liveid/?consumer=default" data-remote="true" data-method="post" data-post-consumer="default" data-post-state="" class="socials-buttons__button socials-buttons__button_liveid" title="Log in with LiveID">
+    <svg width="36" height="36" viewBox="0 0 32 32">
+      <use xlink:href="/img/icons-sprite.svg#liveid"></use>
+    </svg>
+  </a>
+
+  <a href="#" class="socials-buttons__button socials-buttons__button_google google" title="Log in with Google">
+    <svg width="36" height="36" viewBox="0 0 32 32">
+      <use xlink:href="/img/icons-sprite.svg#google"></use>
+    </svg>
+  </a>
+</div>
+
+          </div>
+
+          <div class="form__field s-field">
+            <label for="email_field" class="form__field-label">Email</label>
+            <input type="email" value="" class="form__field-input" id="email_field" name="email" autofocus="" autocomplete="off" data-required="true" data-validate_url="/ajax/validate/email/">
+          </div>
+
+          <div class="form__field s-field">
+            <label for="nickname_field" class="form__field-label">Username</label>
+            <input type="text" value="" class="form__field-input" id="nickname_field" name="login" autocomplete="off" data-required="true" data-validate_url="/ajax/validate/login/">
+          </div>
+
+          <div class="form__field s-field">
+            <label for="password_field" class="form__field-label">Password</label>
+            <input type="password" value="" class="form__field-input" id="password_field" name="password" autocomplete="off" data-required="true" data-validate_url="/ajax/validate/password/" data-validate_password="password2">
+          </div>
+
+          <div class="form__field s-field">
+            <label for="password_repeat" class="form__field-label">Repeat password</label>
+            <input type="password" value="" class="form__field-input" id="password_repeat" name="password2" autocomplete="off" data-required="true" data-validate_url="/ajax/validate/password/" data-validate_password="password">
+          </div>
+
+          <div class="form__field s-field">
+            <label for="agree" class="checkbox" tabindex="0">
+              <input type="checkbox" class="checkbox__input" name="agree" id="agree" data-required="true" checked="">
+              <span class="checkbox__label checkbox__label_top">
+                <span class="checkbox__label-text">I accept the <a href="/info/agreement">User agreement</a></span>
+              </span>
+            </label>
+          </div>
+
+            <div class="form__field">
+              <input name="captcha" type="hidden">
+                  
+  <div class="captcha">
+    <div id="captcha_widget"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LftHuoSAAAAAORONRXn_6xb2f_QCtXqfbRPfY2e&amp;co=aHR0cHM6Ly9hY2NvdW50LmhhYnIuY29tOjQ0Mw..&amp;hl=ru&amp;v=T9w1ROdplctW2nVKvNJYXH8o&amp;theme=light&amp;size=normal&amp;cb=cot2qc3ebh3i" width="304" height="78" role="presentation" name="a-inhs1v60xp8x" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+    <input type="hidden" name="captcha_type" value="recaptcha">
+  </div>
+  <script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.0_afc8ibZR4.O/m=client,plusone/rt=j/sv=1/d=1/ed=1/am=wQE/rs=AGLTcCOPV8Bttuu5r6907bIMhw8f2tfAew/cb=gapi.loaded_0" async=""></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/T9w1ROdplctW2nVKvNJYXH8o/recaptcha__ru.js" crossorigin="anonymous" integrity="sha384-oDPz4hyUmTGrG3FV0H/c4VkM+6FdbuZAhA4Wdcwu55j/X+2bmuiRUkNxf/zdG9mY"></script><script type="text/javascript">
+    var widgetId1;
+    var verifyCallback = function(response) {
+      $('.item.captcha').closest('.s-with-error').removeClass('s-with-error').find('.s-error').remove();
+      $('.item.captcha input[name="captcha_type"]').trigger('change');
+    };
+    var onloadCallback = function() {
+      widgetId1 = grecaptcha.render('captcha_widget', {
+        'sitekey' : '6LftHuoSAAAAAORONRXn_6xb2f_QCtXqfbRPfY2e',
+        'callback' : verifyCallback,
+        'theme' : 'light'
+      });
+    };
+  </script>
+  <script>
+    function reloadRecaptcha(){
+      // reload captcha
+      grecaptcha.reset(widgetId1);
+    }
+  </script>
+  <script async="" defer="" src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit&amp;hl=ru"></script>
+
+
+            </div>
+
+          <div class="form__buttons s-buttons">
+            <button type="submit" name="go" id="registration_button" class="button button_wide button_primary disableble" disabled="">Sign Up</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="shadow-box shadow-box_additionals">
+      <span class="form-additional-message">Already registered? <a href="https://account.habr.com/login/?consumer=default" class="form-additional-message__link">Log in</a></span>
+    </div>
+    <div class="layout__footer">
+  <div class="layout__footer-inner">
+    <div class="footer-links">
+        <a href="?hl=ru_RU" class="footer-links__link">
+          <svg class="footer-links__icon footer-links__icon-ball" width="16" height="16">
+            <use xlink:href="/img/icons-sprite.svg#globus"></use>
+          </svg>
+          Русский
+        </a>
+      <a href="https://account.habr.com/info/about/?consumer=default" class="footer-links__link">About</a>
+      <a href="https://account.habr.com/feedback/?consumer=default" class="footer-links__link">Feedback</a>
+      <a href="https://account.habr.com/info/agreement/?consumer=default" class="footer-links__link">User agreement</a>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+    </div>
+
+      <script src="/js/1602839265/raven.min.js"></script>
+      <script>Raven.config('https://c9f4dd12a43d4216a4e7dc64265d0a6f@s.tmtm.ru/34').install()</script>
+
+    <script src="/js/1602839265/jquery-3.4.1.min.js"></script>
+    <script src="/js/1602839265/jquery.form.min.js"></script>
+    <script src="/js/1602839265/jquery.scrollTo.js"></script>
+    <script src="/js/1602839265/jquery.jgrowl.js"></script>
+    <script src="/js/1602839265/jquery.cookie.js"></script>
+    <script src="/js/1602839265/chosen.jquery.js"></script>
+    <script src="/js/1602839265/form.validator.js"></script>
+    <script src="/js/1602839265/main.js"></script>
+      <script>
+  function gInit() {
+    $('.google').on('click', function(){
+      gapi.auth.authorize({
+        scope:["https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email"],
+        client_id:"472084966048-ut99mpprfh1n8ees0r26kr1183u1q4r0.apps.googleusercontent.com",
+        redirect_uri:"postmessage",
+        immediate:false,
+        response_type:'code',
+        state:"f28a8ba273e201a933ccddb013a27a49",
+        access_type:"offline",
+        cookie_policy:"single_host_origin"
+      }, signInCallback);
+      return false;
+    });
+    $('.google').removeClass('hidden');
+  }
+
+  function signInCallback(authResult) {
+    console.log(authResult);
+    if (authResult['code']) {
+      window.location.href = '/social/callback/google/?state='+authResult['state']+'&code='+authResult['code'];
+    } else if (authResult['error']) {
+      // Произошла ошибка.
+      // Возможные коды ошибок:
+      //   "access_denied" – пользователь отказался предоставить приложению доступ к данным
+      //   "immediate_failed" – не удалось выполнить автоматический вход пользователя
+      console.log('There was an error: ' + authResult['error']);
+      return;
+    }
+  }
+
+  $(document).ready(function(){
+    $('.remind').on('click', function(){
+      var email = $('input[name="email"]').val();
+      $.cookie('email', email, {path: '/' } );
+    })
+  })
+</script>
+<script type="text/javascript" async="async" src="https://plus.google.com/js/client:plusone.js?onload=gInit" gapi_processed="true"></script>
+
+
+
+    <script>
+      var g_hl = 'en';
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+  (function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+      try {
+        w.yaCounter24049429 = new Ya.Metrika({id:24049429,
+          webvisor:true,
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true});
+      } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+      d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/24049429" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  //ga('create', 'UA-726094-15', 'auto');
+  ga('create', 'UA-726094-15', {
+    'cookieDomain': 'none'
+  });
+  ga('create', 'UA-726094-24', 'auto', { 'name': 'HGM', 'allowLinker': true });
+  ga('HGM.require', 'linker');
+  ga('HGM.linker:autoLink', ['toster.ru', 'habr.com', 'account.habr.com', 'm.habr.com']);
+
+  ga('send', 'pageview');
+  ga('HGM.send', 'pageview');
+</script>
+
+    
+  
+
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge" src="https://www.google.com/recaptcha/api2/bframe?hl=ru&amp;v=T9w1ROdplctW2nVKvNJYXH8o&amp;k=6LftHuoSAAAAAORONRXn_6xb2f_QCtXqfbRPfY2e&amp;cb=io4vkbml48hf" name="c-inhs1v60xp8x" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div></body></html>
